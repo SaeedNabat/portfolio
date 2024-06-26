@@ -30,5 +30,11 @@ const config = withPWA({
     defaultLocale: "en",
   },
 });
+export const nextConfig = {
+  output: 'export',
+  basePath: '/portfolio', // Replace with your GitHub repository name
+}
+
+
 
 export default config;

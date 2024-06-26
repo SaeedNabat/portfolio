@@ -8,6 +8,7 @@
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
+    "deploy": "next build && gh-pages -d out",
     "type-check": "tsc --noEmit",
     "format": "prettier --write ./src/**/*.{ts,tsx,js,jsx,json,md}"
   },
@@ -48,6 +49,7 @@
     "autoprefixer": "^10.4.14",
     "eslint": "^8.54.0",
     "eslint-config-next": "^14.0.4",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.31",
     "prettier": "^3.1.0",
     "prettier-plugin-tailwindcss": "^0.5.7",
