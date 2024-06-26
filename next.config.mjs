@@ -30,11 +30,19 @@ const config = withPWA({
     defaultLocale: "en",
   },
 });
-export const nextConfig = {
-  output: 'export',
-  basePath: '/portfolio', // Replace with your GitHub repository name
-}
+/**
+* @type {import('next').NextConfig}
+*/
+const nextConfig = {
+  output: "export",
+  images: {
+    loader: "akamai",
+    path: "",
+  },
+  assetPrefix: "./",
+};
 
 
 
-export default config;
+
+export default nextConfig;
